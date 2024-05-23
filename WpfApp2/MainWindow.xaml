@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="server" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Привет. Напиши свое имя в поле снизу, без имени тебя дальше не пустят" Grid.Row="0" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="privetPider" Grid.Row="1"/>
+        <Button x:Name="CreateServer" Grid.Row="2" Content="я сервер" Click="CreateServer_Click"/>
+        <Button x:Name="CreateClient" Grid.Row="3" Content="я клиент" Click="CreateClient_Click"/>
+        <TextBox x:Name="IpToConnect" Grid.Row="4" Text="Напиши айпи адрес для подключения"/>
+    </Grid>
+</Window>
