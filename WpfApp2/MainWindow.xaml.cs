@@ -28,7 +28,7 @@ namespace WpfApp2
 
         private void CreateClient_Click(object sender, RoutedEventArgs e)
         {
-            var w = new clientWindow();
+            var w = new clientWindow(privetPider.Text);
             w.Show();
             this.Close();
         }

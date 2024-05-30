@@ -18,12 +18,15 @@ namespace WpfApp2
     public partial class clientWindow : Window
     {
         Socket server;
-        public clientWindow()
+        public clientWindow(string name)
         {
             InitializeComponent();
 
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             server.Connect("127.0.0.1", 1489);
+
+            byte[] bytes = Encoding.UTF8.GetBytes(name);
+            server.SendAsync(bytes);
             ReceiveMsg();
         }
         private async Task ReceiveMsg()
@@ -40,7 +43,7 @@ namespace WpfApp2
 
         private async Task SendMsg(string msg)
         {
-            byte[] bytes = new byte[1024];
+            byte[] bytes = Encoding.UTF8.GetBytes(msg);
             await server.SendAsync(bytes, SocketFlags.None);
         }
 
@@ -48,6 +51,12 @@ namespace WpfApp2
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             SendMsg(asd.Text);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            server.Shutdown(SocketShutdown.Both);
+            server.Close();
         }
     }
 }

@@ -40,7 +40,7 @@
             </Button.RenderTransform>
         </Button>
         <Button x:Name="Porker" Grid.Column="2" Grid.Row="2" Content="отправить"/>
-        <Button x:Name="Returns" Grid.Row="2" Content="посмотреть логи чата"/>
+        <Button x:Name="Returns" Grid.Row="2" Content="посмотреть логи чата" Click="Returns_Click"/>
         <ListBox x:Name="pediki" Grid.Row="1" Width="300" Margin="32,24,32,32" RenderTransformOrigin="0.5,0.5">
             <ListBox.RenderTransform>
                 <TransformGroup>

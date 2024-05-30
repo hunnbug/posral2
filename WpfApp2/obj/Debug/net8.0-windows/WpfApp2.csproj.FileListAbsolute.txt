@@ -22,3 +22,6 @@ D:\CODING\mocha\c#\WpfApp2\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.genruntimeco
 D:\CODING\mocha\c#\WpfApp2\WpfApp2\obj\Debug\net8.0-windows\ref\WpfApp2.dll
 D:\CODING\mocha\c#\WpfApp2\WpfApp2\obj\Debug\net8.0-windows\clientWindow.g.cs
 D:\CODING\mocha\c#\WpfApp2\WpfApp2\obj\Debug\net8.0-windows\clientWindow.baml
+D:\CODING\mocha\c#\WpfApp2\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.sourcelink.json
+D:\CODING\mocha\c#\WpfApp2\WpfApp2\obj\Debug\net8.0-windows\logsWindow.g.cs
+D:\CODING\mocha\c#\WpfApp2\WpfApp2\obj\Debug\net8.0-windows\logsWindow.baml

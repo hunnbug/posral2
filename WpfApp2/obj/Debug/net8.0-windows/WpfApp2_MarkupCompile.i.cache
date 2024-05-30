@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\CODING\mocha\c#\WpfApp2\WpfApp2\App.xaml
-31780514201
+4-1814495024
 
-81953558938
+101809696824
 198915248976
-clientWindow.xaml;MainWindow.xaml;serverWindow.xaml;
+clientWindow.xaml;logsWindow.xaml;MainWindow.xaml;serverWindow.xaml;
 
 True
 
